@@ -27,7 +27,7 @@ public class guiSuma extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        JLTitulo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        JLTitulo.setFont(new java.awt.Font("DialogInput", 1, 18)); // NOI18N
         JLTitulo.setText("Suma de enteros");
 
         JLEntero1.setText("primer entero");
@@ -124,7 +124,7 @@ public class guiSuma extends javax.swing.JFrame {
                     .addComponent(JTFEntero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
