@@ -30,19 +30,22 @@ public class guiSuma extends javax.swing.JFrame {
         JLTitulo.setFont(new java.awt.Font("DialogInput", 1, 18)); // NOI18N
         JLTitulo.setText("Suma de enteros");
 
+        JLEntero1.setFont(new java.awt.Font("DialogInput", 1, 12)); // NOI18N
         JLEntero1.setText("primer entero");
 
+        JLEntero2.setFont(new java.awt.Font("DialogInput", 1, 12)); // NOI18N
         JLEntero2.setText("segundo entero");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        JLResulatado.setFont(new java.awt.Font("Dialog", 1, 28)); // NOI18N
+        JLResulatado.setFont(new java.awt.Font("DialogInput", 1, 28)); // NOI18N
         JLResulatado.setForeground(new java.awt.Color(51, 51, 255));
         JLResulatado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLResulatado.setText("Resultado");
         JLResulatado.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         JBSumar.setBackground(new java.awt.Color(153, 153, 153));
+        JBSumar.setFont(new java.awt.Font("DialogInput", 1, 12)); // NOI18N
         JBSumar.setForeground(new java.awt.Color(255, 255, 255));
         JBSumar.setText("Sumar");
         JBSumar.addActionListener(new java.awt.event.ActionListener() {
@@ -52,6 +55,7 @@ public class guiSuma extends javax.swing.JFrame {
         });
 
         JBLimpiar.setBackground(new java.awt.Color(153, 153, 153));
+        JBLimpiar.setFont(new java.awt.Font("DialogInput", 1, 12)); // NOI18N
         JBLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         JBLimpiar.setText("Limpiar");
         JBLimpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -65,15 +69,15 @@ public class guiSuma extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(JLResulatado, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(JBSumar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(JBLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JLResulatado, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -82,9 +86,9 @@ public class guiSuma extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBSumar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(JBLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(JLResulatado)
-                .addContainerGap())
+                .addGap(18, 18, 18))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -107,7 +111,7 @@ public class guiSuma extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(JTFEntero1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
                             .addComponent(JTFEntero2))))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,7 +128,7 @@ public class guiSuma extends javax.swing.JFrame {
                     .addComponent(JTFEntero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
